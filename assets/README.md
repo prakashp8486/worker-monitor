@@ -38,7 +38,7 @@ pip install -r requirements.txt
 The system is configured using a config file. An example configuration:
 
 ```
-"project_name" : "Elansol Technologies Assignment",
+"project_name" : "Vision Assignment",
 "author": "Prakash pacharne",
 "mode" : "video",
 "image_size" : 640,
