@@ -77,7 +77,7 @@ python main.py
 ```
 
 ### Windows Startup Script
-The repository includes a batch file (`Elansol Vision Application.bat`) that can be used to automatically start the application in the background:
+The repository includes a batch file (`Vision Application.bat`) that can be used to automatically start the application in the background:
 
 ```batch
 @echo off
