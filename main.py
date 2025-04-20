@@ -161,20 +161,18 @@ def main():
             roi_points = default_roi_points
             logging.warning("Using default ROI points")
         
-        # Modified section for video capture initialization
+
         try:
             if mode.lower() == "video":
                 cap = cv2.VideoCapture(video_path)
                 logging.info(f"Inferencing on video: {video_path}")
             elif mode.lower() == "rtsp":
-                # Use the threaded VideoCapture class for RTSP
                 cap = VideoCapture(rtsp_link)
                 logging.info(f"Inferencing on RTSP stream: {rtsp_link}")
             else:
                 cap = cv2.VideoCapture(0)
                 logging.info("Using OpenCV's VideoCapture with webcam")
                 
-            # For VideoCapture class we don't check isOpened since it doesn't have that method
             if mode.lower() != "rtsp" and not cap.isOpened():
                 logging.error("Error opening video capture")
                 return
@@ -204,13 +202,10 @@ def main():
         
         while True:
             try:
-                # Modified section for frame reading
                 if mode.lower() == "rtsp":
-                    # For VideoCapture class, read() just returns the frame
                     frame = cap.read()
                     ret = frame is not None
                 else:
-                    # For standard OpenCV VideoCapture
                     ret, frame = cap.read()
                     
                 if not ret:
@@ -218,16 +213,12 @@ def main():
                     break
 
                 try:
-                    # Store original frame for display purposes
                     original_frame = frame.copy()
                     
-                    # Resize frame for processing (but keep original for display)
                     frame = resize_frame(frame, resize_width, resize_height)
                     
-                    # We'll use this for display since we want to see the resized version
                     display_frame = frame.copy()
                     
-                    # Normalize the frame if enabled (for processing only)
                     if normalize_frames:
                         processed_frame = normalize_frame(frame)
                     else:
@@ -238,10 +229,8 @@ def main():
                     display_frame = frame
                     processed_frame = frame
                 
-                # Create mask based on ROI
                 mask = create_mask(frame, roi_points)
                 
-                # Extract ROI from the processed frame
                 roi_frame = extract_roi(processed_frame, mask)
 
                 if dis_lines.lower() == "y":
@@ -252,14 +241,12 @@ def main():
                     except Exception as e:
                         logging.error(f"Error drawing ROI polygon: {e}")
                 
-                # Convert back to uint8 if normalized and YOLO expects uint8
                 if normalize_frames:
                     inference_frame = (roi_frame * 255).astype(np.uint8)
                 else:
                     inference_frame = roi_frame
                 
                 try:
-                    # Pass the processed frame to YOLO
                     results = model.track(inference_frame, iou=iou_threshold, imgsz=image_size, persist=persist, conf=conf_threshold, classes=classes)
                 except Exception as e:
                     logging.error(f"Error during YOLO inference: {e}")
