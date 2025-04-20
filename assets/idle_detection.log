@@ -1,0 +1,41 @@
+2025-04-20 11:03:39,136 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:03:39,136 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:03:39,151 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:03:39,151 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:03:39,153 - INFO - Frame normalization enabled: True
+2025-04-20 11:04:11,996 - WARNING - Could not read frame. Exiting...
+2025-04-20 11:04:11,996 - INFO - Cleaning up resources
+
+2025-04-20 11:06:21,514 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:06:21,521 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:06:21,521 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:06:21,521 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:06:21,521 - INFO - Frame normalization enabled: True
+2025-04-20 11:06:27,841 - INFO - User requested exit with 'q' key
+2025-04-20 11:06:27,841 - INFO - Cleaning up resources
+2025-04-20 11:06:31,675 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:06:31,675 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:06:31,675 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:06:31,675 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:06:31,675 - INFO - Frame normalization enabled: True
+2025-04-20 11:06:36,410 - INFO - User requested exit with 'q' key
+2025-04-20 11:06:36,410 - INFO - Cleaning up resources
+2025-04-20 11:08:44,614 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:08:44,623 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:08:44,623 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:08:44,623 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:08:44,623 - INFO - Frame normalization enabled: True
+2025-04-20 11:08:50,615 - INFO - User requested exit with 'q' key
+2025-04-20 11:08:50,615 - INFO - Cleaning up resources
+2025-04-20 11:08:54,736 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:08:54,736 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:08:54,736 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:08:54,736 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:08:54,752 - INFO - Frame normalization enabled: True
+2025-04-20 11:10:27,233 - INFO - ROI points loaded from C:\Users\ASUS\OneDrive\Desktop\worker\assets\roi_points.txt
+2025-04-20 11:10:27,263 - INFO - Inferencing on video: C:\Users\ASUS\OneDrive\Desktop\worker\assets\sleeping.webm
+2025-04-20 11:10:27,263 - INFO - YOLO model loaded successfully from ONNX
+2025-04-20 11:10:27,263 - INFO - Frame resizing enabled: 640x640
+2025-04-20 11:10:27,263 - INFO - Frame normalization enabled: True
+2025-04-20 11:10:40,642 - INFO - User requested exit with 'q' key
+2025-04-20 11:10:40,642 - INFO - Cleaning up resources
